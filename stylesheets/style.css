@@ -102,3 +102,7 @@ li:first-child:before{
   height:50em;
   background-color: #facade;
 }
+
+.project-photo, .project-text {
+  display:none;
+}

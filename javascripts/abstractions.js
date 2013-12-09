@@ -12,7 +12,7 @@ function populateWorkView(){
 function goToWork(){
   title.html('Work');
   title.css('width', "2em");
-  window.location.hash = "work";
+  // window.location.hash = "work";
   $('.col-md-6').fadeOut(300).queue(populateWorkView);
 }
 
