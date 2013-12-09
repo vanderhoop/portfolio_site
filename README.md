@@ -1,1 +1,1 @@
-Here's the code for my portfolio site.
+Building my site from scratch, as I need to familiarize myself with the ins and outs of CSS and responsive design.
