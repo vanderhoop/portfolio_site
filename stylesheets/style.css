@@ -32,6 +32,8 @@ a:active {text-decoration:underline;}
 
 #footer {
   height: 10em;
+/*  position: fixed;
+  bottom: 0px;*/
 }
 
 ul {

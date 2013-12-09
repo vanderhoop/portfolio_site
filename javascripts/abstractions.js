@@ -5,13 +5,11 @@ function removeHash () {
 }
 
 function populateWorkView(){
-  console.log("populateWorkView function is working");
   $('#title-div').fadeIn();
   // I want to add tiles to my work page
 }
 
 function goToWork(){
-  console.log("goToWork function works");
   title.html('Work');
   title.css('width', "2em");
   window.location.hash = "work";
@@ -20,10 +18,10 @@ function goToWork(){
 
 function populateContactView(){
   $('#title-div').fadeIn();
+  // all contact info
 }
 
 function goToContact(){
-  console.log("goToContact function works");
   title.html('Contact');
   title.css('width', "3em");
   window.location.hash = "contact";
@@ -33,7 +31,6 @@ function goToContact(){
 }
 
 function goToHome(){
-  console.log("goToHome function works");
   // removes pesky hash symbol when navigating back to Home from Work || Contact
   removeHash();
   window.top.location=window.top.location;
