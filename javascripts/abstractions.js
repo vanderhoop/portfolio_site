@@ -4,7 +4,9 @@ function removeHash () {
 
 function populateWorkView(){
   console.log("populateWorkView function is working");
+  $('#title-div').fadeIn();
   // I want to add tiles to my work page
+
 
 }
 
