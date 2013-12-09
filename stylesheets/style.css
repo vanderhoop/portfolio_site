@@ -77,3 +77,7 @@ li:first-child:before{
 #title-div {
   height: 4em;
 }
+
+#nested-title-div {
+  padding-left: 4em;
+}
