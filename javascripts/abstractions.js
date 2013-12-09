@@ -1,3 +1,5 @@
+var title = $('#title');
+
 function removeHash () {
   history.pushState("", document.title, window.location.pathname + window.location.search);
 }
@@ -6,8 +8,6 @@ function populateWorkView(){
   console.log("populateWorkView function is working");
   $('#title-div').fadeIn();
   // I want to add tiles to my work page
-
-
 }
 
 function goToWork(){
