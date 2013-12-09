@@ -12,6 +12,10 @@ div {
   height:100%;
 }
 
+img {
+  height: 50%;
+}
+
 #header, #footer {
   background-color: red;
 }
@@ -32,8 +36,9 @@ a:active {text-decoration:underline;}
 
 #footer {
   height: 10em;
-/*  position: fixed;
-  bottom: 0px;*/
+/*  margin-bottom: 0;*/
+  bottom: 10px;
+  clear: both;
 }
 
 ul {
@@ -61,11 +66,18 @@ li:first-child:before{
 /*Container*/
 
 #main-container {
-  border-left: 1px dotted black;
-  border-right: 1px dotted black;
-  height: 60em;
+  /*height: 4em;*/
   background-color: #facade;
   margin: 0 auto;
+}
+
+#main-container-col-left {
+  background-color: green;
+  /*overflow:auto;*/
+}
+
+#main-container-col-right {
+  overflow:hidden;
 }
 
 #title {
@@ -74,7 +86,7 @@ li:first-child:before{
 }
 
 #hello {
-  margin-top: 25%;
+  top:25%;
 }
 
 #title-div {
@@ -84,4 +96,9 @@ li:first-child:before{
 
 #nested-title-div {
   padding-left: 4em;
+}
+
+#lower-container {
+  height:50em;
+  background-color: #facade;
 }

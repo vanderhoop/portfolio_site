@@ -5,11 +5,6 @@ var Router = Backbone.Router.extend({
     'contact' : 'contact'
   },
 
-  initialize: function(){
-    // console.log("Router is working");
-
-  },
-
   home: function(){
     console.log("homeView is working");
   },
@@ -20,7 +15,5 @@ var Router = Backbone.Router.extend({
 
   contact: function(){
     console.log("contact view is firing");
-  }
-
-
+  } // contact
 }); //Router
