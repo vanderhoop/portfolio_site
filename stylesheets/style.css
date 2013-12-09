@@ -1,0 +1,61 @@
+/* Header and Footer*/
+h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Abel', sans-serif;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  height:100%;
+}
+
+div {
+  height:100%;
+}
+
+#header, #footer {
+  background-color: red;
+}
+
+#header-nav-div {
+  height:100%;
+}
+
+#ul-wrapper {
+  height: 50%;
+  margin-top: 0.75em;
+}
+
+#footer {
+  height: 10em;
+}
+
+ul {
+  margin-top: 25%;
+}
+
+ul li {
+  list-style: none;
+  display:inline-block;
+}
+
+ul li:before {
+content: "· ";
+}
+
+li:first-child:before{
+  content:"";
+}
+
+/*Container*/
+
+#main-container {
+  border-left: 1px dotted black;
+  border-right: 1px dotted black;
+  height: 60em;
+  background-color: #facade;
+  margin: 0 auto;
+}
+
+#hello {
+  margin-top: 25%;
+}
