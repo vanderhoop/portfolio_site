@@ -66,7 +66,7 @@ li:first-child:before{
   margin: 0 auto;
 }
 
-#work-title {
+#title {
   border-bottom: 1px dotted black;
   width: 2em;
 }
