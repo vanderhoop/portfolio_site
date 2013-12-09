@@ -1,19 +1,26 @@
 var Router = Backbone.Router.extend({
   routes: {
-    '/': "homeView",
-    '#work': 'workView'
+    ''        : 'home',
+    'work'    : 'work',
+    'contact' : 'contact'
   },
 
   initialize: function(){
-    console.log("Router is working");
+    // console.log("Router is working");
 
   },
 
-  homeView: function(){
-
+  home: function(){
+    console.log("homeView is working");
   },
 
-  workView: function(){
+  work: function(){
     console.log("workView is firing");
+  },
+
+  contact: function(){
+    console.log("contact view is firing");
   }
+
+
 }); //Router
