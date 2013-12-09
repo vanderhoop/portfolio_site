@@ -1,11 +1,17 @@
 function removeHash () {
-    history.pushState("", document.title, window.location.pathname + window.location.search);
+  history.pushState("", document.title, window.location.pathname + window.location.search);
+}
+
+function populateWorkView(){
+  console.log("populateWorkView function is working");
+  // I want to add tiles to my work page
+
 }
 
 function goToWork(){
   console.log("goToWork function works");
-  $('.col-md-6').hide(500);
-  $('#main-container-col-left').html('<p>Hi</p>');
+  $('.col-md-6').hide(500).queue(populateWorkView);
+  // $('#main-container-col-left').html('<p>Hi</p>');
   window.location.hash = "work";
 }
 
@@ -19,5 +25,6 @@ function goToHome(){
   console.log("goToHome function works");
   // removes pesky hash symbol when navigating back to Home from Work || Contact
   removeHash();
-  location.reload();
+  window.top.location=window.top.location;
+  // location.reload(false);
 }

@@ -66,6 +66,14 @@ li:first-child:before{
   margin: 0 auto;
 }
 
+#work-title {
+  border-bottom: 1px dotted black;
+}
+
 #hello {
   margin-top: 25%;
+}
+
+#title-div {
+  height: 4em;
 }
