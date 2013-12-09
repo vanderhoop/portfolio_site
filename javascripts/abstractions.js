@@ -4,6 +4,8 @@ function removeHash () {
 
 function goToWork(){
   console.log("goToWork function works");
+  $('.col-md-6').hide(500);
+  $('#main-container-col-left').html('<p>Hi</p>');
   window.location.hash = "work";
 }
 
@@ -17,4 +19,5 @@ function goToHome(){
   console.log("goToHome function works");
   // removes pesky hash symbol when navigating back to Home from Work || Contact
   removeHash();
+  location.reload();
 }
