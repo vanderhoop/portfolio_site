@@ -36,10 +36,15 @@ ul {
 ul li {
   list-style: none;
   display:inline-block;
+  opacity: 0.75;
 }
 
 ul li:before {
 content: "· ";
+}
+
+ul li:hover {
+  opacity: 1;
 }
 
 li:first-child:before{
