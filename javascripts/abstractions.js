@@ -7,9 +7,9 @@ function removeHash () {
 function populateWorkView(){
   console.log("popWorkView firing");
   $('#title-div').fadeIn();
-  $('.project-photo').fadeIn();
-  $('.project-text').fadeIn();
-  // I want to add tiles to my work page
+  // $('.project-photo').fadeIn();
+  // $('.project-text').fadeIn();
+  $('.work').fadeIn();
 }
 
 function goToWork(){
