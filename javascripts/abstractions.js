@@ -5,15 +5,23 @@ function removeHash () {
 }
 
 function populateWorkView(){
+  console.log("popWorkView firing");
   $('#title-div').fadeIn();
+  $('.project-photo').fadeIn();
+  $('.project-text').fadeIn();
   // I want to add tiles to my work page
 }
 
 function goToWork(){
-  title.html('Work');
-  title.css('width', "2em");
-  // window.location.hash = "work";
-  $('.col-md-6').fadeOut(300).queue(populateWorkView);
+  var hash = window.location.hash.substring(1);
+  if (hash != "work") {
+    title.html('Work');
+    title.css('width', "2em");
+    $('.'+hash).fadeOut(300).queue(populateWorkView);
+    // $('.col-md-6').fadeOut().queue(console.log("done fading"));
+  }
+  window.location.hash = "work";
+  // $('.col-md-6').fadeOut(300).queue(populateWorkView);
 }
 
 function populateContactView(){
@@ -22,10 +30,14 @@ function populateContactView(){
 }
 
 function goToContact(){
-  title.html('Contact');
-  title.css('width', "3em");
+  var hash = window.location.hash.substring(1);
+  debugger
+  if (hash != "contact") {
+    title.html('Contact');
+    title.css('width', "3em");
+    $('.'+ hash).fadeOut(300).queue(populateContactView);
+  }
   window.location.hash = "contact";
-  $('.col-md-6').fadeOut(300).queue(populateContactView);
   // conjures email with prepopulated fields
   // window.location = "mailto:sayhello@yourfriendtravis.com?Subject=Greetings!&body=Hello%20Travis%2C%0AMy%20name%20is%20________.%20I%27d%20like%20to%20get%20in%20touch!%20I%20can%20best%20be%20reached%20by%20(phone%2Femail)%20at%3A%20______________%20.%20%0A%0ATalk%20soon%2C%20%0A(Your%20name)";
 }

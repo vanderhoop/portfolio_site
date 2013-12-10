@@ -11,7 +11,7 @@ div {
   height: 100%; }
 
 img {
-  height: 50%; }
+  height: 37%; }
 
 #header, #footer {
   background-color: red; }
@@ -91,6 +91,3 @@ li:first-child:before {
 
 .project-photo, .project-text {
   display: none; }
-
-.marp {
-  background-color: red; }

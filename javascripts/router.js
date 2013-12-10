@@ -10,6 +10,7 @@ var Router = Backbone.Router.extend({
   },
 
   work: function(){
+
     console.log("workView is firing");
   },
 
