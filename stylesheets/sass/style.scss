@@ -71,8 +71,9 @@ li:first-child:before{
   margin: 0 auto;
 }
 
-#main-container-col-left {
+.col-md-5.col-md-offset-1 {
   background-color: green;
+  padding-left: 3em;
   /*overflow:auto;*/
 }
 
@@ -96,6 +97,8 @@ li:first-child:before{
 
 #nested-title-div {
   padding-left: 4em;
+  background-color: #facade;
+
 }
 
 #lower-container {
@@ -106,4 +109,10 @@ li:first-child:before{
 .project-photo, .project-text {
   display: none;
 }
+
+.contact {
+  display: none;
+}
+
+.work {}
 

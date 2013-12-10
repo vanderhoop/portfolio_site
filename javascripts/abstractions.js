@@ -13,15 +13,16 @@ function populateWorkView(){
 }
 
 function goToWork(){
+  console.log("goToWorkFiring");
+  debugger
   var hash = window.location.hash.substring(1);
   if (hash != "work") {
     title.html('Work');
     title.css('width', "2em");
     $('.'+hash).fadeOut(300).queue(populateWorkView);
-    // $('.col-md-6').fadeOut().queue(console.log("done fading"));
+    $('.contact, .home').attr("display", "none");
   }
   window.location.hash = "work";
-  // $('.col-md-6').fadeOut(300).queue(populateWorkView);
 }
 
 function populateContactView(){
@@ -31,11 +32,11 @@ function populateContactView(){
 
 function goToContact(){
   var hash = window.location.hash.substring(1);
-  debugger
   if (hash != "contact") {
     title.html('Contact');
     title.css('width', "3em");
     $('.'+ hash).fadeOut(300).queue(populateContactView);
+    $('.work, .home').attr("display", "none");
   }
   window.location.hash = "contact";
   // conjures email with prepopulated fields
