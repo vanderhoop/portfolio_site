@@ -106,11 +106,20 @@ li:first-child:before{
   background-color: #facade;
 }
 
+p.work {
+  font-size: 0.75em;
+}
+
 // .project-photo, .project-text {
 //   display: none;
 // }
 
-.contact, .work {
-  display: none;
+.contact {
+  opacity: 0;
+}
+
+.work {
+  // display: none;
+  opacity: 0;
 }
 

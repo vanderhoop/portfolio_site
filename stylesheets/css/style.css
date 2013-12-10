@@ -91,5 +91,11 @@ li:first-child:before {
   height: 50em;
   background-color: #facade; }
 
-.contact, .work {
-  display: none; }
+p.work {
+  font-size: 0.75em; }
+
+.contact {
+  opacity: 0; }
+
+.work {
+  opacity: 0; }
