@@ -27,6 +27,7 @@ function goToWork(){
 
 function populateContactView(){
   $('#title-div').fadeIn();
+  $('.contact').fadeIn();
   // all contact info
 }
 
