@@ -1,0 +1,113 @@
+/* Header and Footer*/
+h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Abel', sans-serif;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  height:100%;
+}
+
+div {
+  height:100%;
+}
+
+img {
+  height: 50%;
+}
+
+#header, #footer {
+  background-color: red;
+}
+
+#header-nav-div {
+  height:100%;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+#ul-wrapper {
+  height: 50%;
+  margin-top: 0.75em;
+}
+
+#footer {
+  height: 10em;
+/*  margin-bottom: 0;*/
+  bottom: 10px;
+  clear: both;
+}
+
+ul {
+  margin-top: 25%;
+}
+
+ul li {
+  list-style: none;
+  display:inline-block;
+  opacity: 0.75;
+}
+
+ul li:before {
+content: "· ";
+}
+
+ul li:hover {
+  opacity: 1;
+}
+
+li:first-child:before{
+  content:"";
+}
+
+/*Container*/
+
+#main-container {
+  /*height: 4em;*/
+  background-color: #facade;
+  margin: 0 auto;
+}
+
+#main-container-col-left {
+  background-color: green;
+  /*overflow:auto;*/
+}
+
+#main-container-col-right {
+  overflow:hidden;
+}
+
+#title {
+  border-bottom: 1px dotted black;
+  width: 2em;
+}
+
+#hello {
+  top:25%;
+}
+
+#title-div {
+  height: 4em;
+  display: none;
+}
+
+#nested-title-div {
+  padding-left: 4em;
+}
+
+#lower-container {
+  height:50em;
+  background-color: #facade;
+}
+
+.project-photo, .project-text {
+  display:none;
+}
+
+
+.marp {
+  background-color: red;
+}
