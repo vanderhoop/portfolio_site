@@ -80,8 +80,7 @@ li:first-child:before {
   top: 25%; }
 
 #title-div {
-  height: 4em;
-  display: none; }
+  height: 4em; }
 
 #nested-title-div {
   padding-left: 4em;
