@@ -36,7 +36,6 @@ a:active {text-decoration:underline;}
 
 #footer {
   height: 10em;
-/*  margin-bottom: 0;*/
   bottom: 10px;
   clear: both;
 }
@@ -109,16 +108,11 @@ p.work {
   font-size: 0.75em;
 }
 
-// .project-photo, .project-text {
-//   display: none;
-// }
-
-.contact {
-  opacity: 0;
+.display-true {
+  opacity: 1;
 }
 
-.work {
-  // display: none;
+.display-false {
   opacity: 0;
 }
 

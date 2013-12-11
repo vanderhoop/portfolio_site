@@ -37,7 +37,6 @@ a:active {
 
 #footer {
   height: 10em;
-  /*  margin-bottom: 0;*/
   bottom: 10px;
   clear: both; }
 
@@ -93,8 +92,8 @@ li:first-child:before {
 p.work {
   font-size: 0.75em; }
 
-.contact {
-  opacity: 0; }
+.display-true {
+  opacity: 1; }
 
-.work {
+.display-false {
   opacity: 0; }
