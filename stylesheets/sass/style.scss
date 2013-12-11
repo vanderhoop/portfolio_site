@@ -1,3 +1,24 @@
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+* { -webkit-animation-duration: 0.5s; }
+.fadeIn { -webkit-animation-name:fadeIn; }
+.fadeOut { -webkit-animation-name:fadeOut; }
+.not_visible { opacity:0; display:none; }
+
 /* Header and Footer*/
 h1, h2, h3, h4, h5, h6, li {
   font-family: 'Abel', sans-serif;
@@ -6,6 +27,7 @@ h1, h2, h3, h4, h5, h6, li {
 body {
   font-family: 'Ubuntu', sans-serif;
   height:100%;
+
 }
 
 div {
@@ -73,7 +95,6 @@ li:first-child:before{
 .col-md-5.col-md-offset-1 {
   background-color: green;
   padding-left: 3em;
-  /*overflow:auto;*/
 }
 
 #main-container-col-right {
@@ -110,9 +131,22 @@ p.work {
 
 .display-true {
   opacity: 1;
+  transition: opacity 0.4s ease-out;
+  -ms-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -webkit-transition: opacity 0.4s ease-out;
 }
 
 .display-false {
   opacity: 0;
+  transition: opacity 0.4s ease-out;
+  -ms-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -webkit-transition: opacity 0.4s ease-out;
 }
+
+#travis-pic {
+  height: 16em;
+}
+
 

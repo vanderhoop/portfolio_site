@@ -9,7 +9,6 @@ function populateWorkView(){
 }
 
 function goToWork(){
-
   console.log("goToWorkFiring");
   var hash = window.location.hash.substring(1);
   if (hash != "work") {
@@ -21,14 +20,18 @@ function goToWork(){
 }
 
 function populateContactView(){
-  $('.work, .home').addClass('display-false');
+  console.log("populateContactView firing");
+  // $('.work, .home').addClass('display-false');
+  $('.home, .work').switchClass('display-true', 'display-false');
+  // $('.home, .work').removeClass('display-true');
+  // setTimeout(function(){
+  //   $('.home, .work').addClass('display-false');
+  // }, 500);
   $('#content-div').html('<p class="contact">Interested in chatting? Feel free to connect with me over any of the social networks I have listed in the footer or go ahead and send me a quick <a href="mailto:sayhello@yourfriendtravis.com?Subject=Greetings!&body=Hello%20Travis%2C%0AMy%20name%20is%20________.%20I%27d%20like%20to%20get%20in%20touch!%20I%20can%20best%20be%20reached%20by%20(phone%2Femail)%20at%3A%20______________%20.%20%0A%0ATalk%20soon%2C%20%0A(Your%20name)">e-mail</a>.</p>');
-  $('#title-div').fadeIn();
-  // all contact info
-  // $('.contact').animate({ opacity: 1 }, 500);
 }
 
 function goToContact(){
+  console.log("goToContact firing");
   var hash = window.location.hash.substring(1);
   if (hash != "contact") {
     title.html('Contact');
