@@ -1,33 +1,5 @@
 @charset "UTF-8";
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-
-  100% {
-    opacity: 0; } }
-
-* {
-  -webkit-animation-duration: 0.5s; }
-
-.fadeIn {
-  -webkit-animation-name: fadeIn; }
-
-.fadeOut {
-  -webkit-animation-name: fadeOut; }
-
-.not_visible {
-  opacity: 0;
-  display: none; }
-
-/* Header and Footer*/
 h1, h2, h3, h4, h5, h6, li {
   font-family: 'Abel', sans-serif; }
 
@@ -107,7 +79,15 @@ li:first-child:before {
   margin: 0 auto;
 }
 
-/* So left columns align */
+iframe {
+  height: 100%;
+}
+
+.work {
+  margin-top: 15px;
+}
+
+/* So left columns align w/ title & nav ul */
 .col-md-5.col-md-offset-1,
 .col-md-3.col-md-offset-1 {
   background-color: green;
