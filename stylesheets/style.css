@@ -81,8 +81,6 @@ li:first-child:before{
 }
 
 #title {
-  border-bottom: 1px dotted black;
-  width: 2em;
 }
 
 #hello {

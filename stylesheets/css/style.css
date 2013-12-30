@@ -111,10 +111,6 @@ li:first-child:before {
   padding-left: 4em;
   background-color: #facade; }
 
-#lower-container {
-  height: 50em;
-  background-color: #facade; }
-
 p.work {
   font-size: 0.75em; }
 
