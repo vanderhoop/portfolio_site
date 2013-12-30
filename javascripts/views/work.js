@@ -11,6 +11,8 @@ var WorkView = Backbone.View.extend({
     console.log("Workview render function is firing");
     var html = prepareTitleTemplate("Work");
     this.$el.html(html);
+    var workHTML = retrieveWorkTemplate();
+    this.$el.append(workHTML);
   }
 
 }); // WorkView

@@ -54,9 +54,6 @@ html, body {
   width: 100%;
 }
 
-/*div {
-  height: 100%; }*/
-
 img {
   height: 27%; }
 
@@ -110,9 +107,22 @@ li:first-child:before {
   margin: 0 auto;
 }
 
-.col-md-5.col-md-offset-1 {
+/* So left columns align */
+.col-md-5.col-md-offset-1,
+.col-md-3.col-md-offset-1 {
   background-color: green;
-  padding-left: 4em; }
+  padding-left: 4em;
+}
+
+/* So right columns align on collapse */
+.col-md-3.right-column {
+  padding-left: 4em;
+}
+
+
+.red {
+  background-color: red;
+}
 
 #main-container-col-right {
   overflow: hidden;

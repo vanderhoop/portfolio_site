@@ -21,6 +21,10 @@ function retrieveHomeTemplate(){
   return template();
 }
 
+function retrieveWorkTemplate(){
+  return $("#work-template").html();
+}
+
 
 
 // function removeHash() {
