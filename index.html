@@ -29,14 +29,7 @@
       <!-- header end -->
       <!-- main container begin -->
       <div id="main-container" class="row">
-        <div class="row" id="title-div">
-          <div class="col-md-offset-1" id="nested-title-div">
-            <h2 id="title">Home</h2>
-          </div>
-        </div>
 
-        <div class="col-md-5 col-md-offset-1" id="main-container-col-left">
-        </div>
 
         <div class="col-md-6" id="main-container-col-right">
           <h2 id="hello" class="home"></h2>
@@ -58,6 +51,23 @@
       </div>
     </script>
 
+    <script id="home-template" type="text/x-handlebars-template">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+        </div>
+        <div class="col-md-5" id="main-container-col-right">
+          <h2 id="hello" class="home">My name is Travis</br>I make cool things for the web.</h2>
+        </div>
+      </div>
+    </script>
+
+    <script id="contact-template">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <p class="contact">Interested in chatting? Feel free to connect with me over any of the social networks listed in the footer or go ahead and send me a quick <a href="mailto:sayhello@yourfriendtravis.com?Subject=Greetings!&body=Hello%20Travis%2C%0AMy%20name%20is%20________.%20I%27d%20like%20to%20get%20in%20touch!%20I%20can%20best%20be%20reached%20at%3A%20______________%20.%20%0A%0ATalk%20soon%2C%20%0A(Your%20name)">e-mail</a>.</p>
+        </div>
+      </div>
+    </script>
     <!-- Javascripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>

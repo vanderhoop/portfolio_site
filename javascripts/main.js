@@ -4,8 +4,9 @@ $( document ).ready(function() {
   app.router = new Router();
   Backbone.history.start();
   app.router.navigate("home", {trigger: true})
+
   // sets up routing for contact and nav
-  $('#contact-nav').on("click", function(){
+  $('#contact-nav, #work-nav').on("click", function(){
     app.router.navigate("contact", {trigger:true});
   });
   $('#work-nav').on("click", function(){

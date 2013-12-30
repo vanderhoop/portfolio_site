@@ -9,7 +9,7 @@ var HomeView = Backbone.View.extend({
 
   render: function(){
     console.log("HomeView's render function is firing");
-    var html = prepareTitleTemplate("Home");
+    var html = retrieveHomeTemplate();
     this.$el.html(html);
   },
 

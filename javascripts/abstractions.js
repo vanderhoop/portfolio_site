@@ -8,8 +8,20 @@ function prepareTitleTemplate(titleText){
   var source = $("#title-template").html(),
       template = Handlebars.compile(source),
       context = { title: titleText };
-      return template(context);
+  return template(context);
 }
+
+function retrieveContactTemplate(){
+  return $("#contact-template").html();
+}
+
+function retrieveHomeTemplate(){
+  var source = $("#home-template").html();
+  var template = Handlebars.compile(source);
+  return template();
+}
+
+
 
 // function removeHash() {
 //   history.pushState("", document.title, window.location.pathname + window.location.search);

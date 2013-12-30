@@ -23,8 +23,6 @@ var Router = Backbone.Router.extend({
   work: function(){
     console.log("work route is firing");
     app.workView = new WorkView();
-    // $('#hello').remove();
-    // $('#content-div').html('');
     // $('.home, .contact').switchClass('display-true', 'display-false');
     // // $('.home, .contact').removeClass('display-true').addClass('display-false');
     // $('.work').switchClass('display-false','display-true');
@@ -32,8 +30,6 @@ var Router = Backbone.Router.extend({
 
   contact: function(){
     console.log("contact route is firing");
-    app.contactView = new ContactView();
-    // $('#hello').html('');
-    // $('.home, .work').switchClass('display-true', 'display-false');
+    app.contactView = new ContactView();    // $('.home, .work').switchClass('display-true', 'display-false');
   }
 }); //Router
