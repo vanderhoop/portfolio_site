@@ -6,7 +6,7 @@ var Router = Backbone.Router.extend({
   },
 
   home: function(){
-    console.log("homeView is working");
+    console.log("home route is firing home function is working");
     $('#content-div').html('<img src="images/user.png" id="travis-pic" alt="">');
     $('#content-div').switchClass('display-false','display-true');
     // $('#content-div').removeClass('display-false').addClass('display-true');
@@ -16,7 +16,7 @@ var Router = Backbone.Router.extend({
   },
 
   work: function(){
-    console.log("workView is firing");
+    console.log("work function is firing");
     $('#hello').remove();
     $('#content-div').html('');
     $('.home, .contact').switchClass('display-true', 'display-false');
@@ -26,12 +26,8 @@ var Router = Backbone.Router.extend({
 
   contact: function(){
     console.log("contact function firing");
+    var contactView = new ContactView();
     $('#hello').html('');
     $('.home, .work').switchClass('display-true', 'display-false');
-    // $('.home, .work').removeClass('display-true');
-    // setTimeout(function(){
-    //   $('.home, .work').addClass('display-false');
-    // }, 500);
-    // $('#content-div').removeClass("display-false").addClass('display-true');
   }
 }); //Router
