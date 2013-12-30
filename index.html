@@ -45,18 +45,26 @@
       </div> <!-- main container -->
 
       <div id="footer">
-        <p id="marp">Yo</p>
+        <p id="marp">GitHub - Twitter - LinkedIn</p>
       </div>
       <!-- footer end -->
     </div>
 
+    <script id="title-template" type="text/x-handlebars-template">
+      <div class="row" id="title-div">
+        <div class="col-md-offset-1" id="nested-title-div">
+          <h2><span id="title">{{title}}</span></h2>
+        </div>
+      </div>
+    </script>
+
     <!-- Javascripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
     <script src="javascripts/abstractions.js"></script>
     <script src="javascripts/underscore-min.js"></script>
     <script src="javascripts/backbone-min.js"></script>
+    <script src="javascripts/handlebars.js"></script>
     <script src="javascripts/views/home.js"></script>
     <script src="javascripts/views/work.js"></script>
     <script src="javascripts/views/contact.js"></script>
