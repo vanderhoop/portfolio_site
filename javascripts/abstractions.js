@@ -22,7 +22,9 @@ function retrieveHomeTemplate(){
 }
 
 function retrieveWorkTemplate(){
-  return $("#work-template").html();
+  var source = $("#work-template").html();
+  var template = Handlebars.compile(source);
+  return template;
 }
 
 
