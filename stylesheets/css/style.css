@@ -103,6 +103,12 @@ iframe {
   top: 20%;
 }
 
+#travis-img {
+  padding-top: 56px;
+  position: relative;
+  left: 86px;
+}
+
 .work {
   margin-top: 15px;
 }
@@ -112,6 +118,7 @@ iframe {
 .col-md-4.col-md-offset-1 {
   background-color: green;
   padding-left: 4em;
+  height:inherit;
 }
 
 /* So right columns align on collapse */
