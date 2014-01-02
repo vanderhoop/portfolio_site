@@ -20,23 +20,21 @@ p {
 
 a:link, a:visited, a:hover, a:active  { text-decoration: none; }
 
-ul {
-  margin-top: 25%;
-}
-
 ul li {
   list-style: none;
   display: inline-block;
   opacity: 0.85;
+  font-size: 1.55em;
 }
 
-li:first-child:before { content: ""; }
+li+li {
+  margin-left:.3em;
+}
 
-ul li:before { content: "· "; }
+li:hover { opacity: 1; }
 
-ul li:hover { opacity: 1; }
-
-iframe { /* for embedded vimeo clips */
+/* for embedded vimeo clips */
+iframe {
   width: 360px;
   height: 222px;
   frameborder: 0;
@@ -85,8 +83,7 @@ iframe { /* for embedded vimeo clips */
   width: 100%;
 }
 
-
-.ul-wrapper { margin-top: 0.75em; }
+.ul-wrapper { margin-top: 1.55em; }
 
 /*=========================================*/
 /* Content/Container Divs                  */
@@ -114,7 +111,6 @@ iframe { /* for embedded vimeo clips */
 .col-md-3.right-column {
   padding-left: 4em;
 }
-
 
 #main-container-col-right {
   overflow: hidden;
