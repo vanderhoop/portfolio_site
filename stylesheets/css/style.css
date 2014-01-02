@@ -85,6 +85,13 @@ iframe {
   width: 100%;
 }
 
+#footer li:nth-child(even) {
+  padding-top: ;
+  margin-top: ;
+  position: relative;
+  top:0.25em;
+}
+
 /*=========================================*/
 /* Content/Container Divs                  */
 /*=========================================*/
