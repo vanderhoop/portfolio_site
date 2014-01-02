@@ -825,7 +825,7 @@ pre code {
 }
 
 .row {
-/*  commented out to get rid of pesky whitespace on either side of header and footer  */
+/*  commented out to avoid pesky white space on either side of header and footer  */
 /*   margin-right: -15px; */
 /*   margin-left: -15px; */
 }

@@ -1,50 +1,24 @@
-.green {
-  background-color: green;
+@charset "UTF-8";
+
+/*==================================*/
+/* Global Styles                    */
+/*==================================*/
+html, body {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-/* Header and Footer*/
 h1, h2, h3, h4, h5, h6, li {
   font-family: 'Abel', sans-serif;
 }
 
-body {
-  font-family: 'Ubuntu', sans-serif;
-  height:100%;
-  background-color: #facade;
+p {
+  font-size: 0.9em;
 }
 
-div {
-  height:100%;
-}
-
-img {
-  height: 50%;
-}
-
-#header, #footer {
-  background-color: red;
-}
-
-#header-nav-div {
-  height:100%;
-}
-
-a:link {text-decoration:none;}
-a:visited {text-decoration:none;}
-a:hover {text-decoration:underline;}
-a:active {text-decoration:underline;}
-
-#ul-wrapper {
-  height: 50%;
-  margin-top: 0.75em;
-}
-
-#footer {
-  height: 10em;
-/*  margin-bottom: 0;*/
-  bottom: 10px;
-  clear: both;
-}
+a:link, a:visited, a:hover, a:active  { text-decoration: none; }
 
 ul {
   margin-top: 25%;
@@ -52,62 +26,138 @@ ul {
 
 ul li {
   list-style: none;
-  display:inline-block;
-  opacity: 0.75;
+  display: inline-block;
+  opacity: 0.85;
 }
 
-ul li:before {
-content: "· ";
+li:first-child:before { content: ""; }
+
+ul li:before { content: "· "; }
+
+ul li:hover { opacity: 1; }
+
+iframe { /* for embedded vimeo clips */
+  width: 360px;
+  height: 222px;
+  frameborder: 0;
 }
 
-ul li:hover {
-  opacity: 1;
+#page {
+  min-height: 100%; /* for sticky footer */
+  height: 100%;  /* for sticky footer in Internet Explorer */
+  position: relative;
+  background-color: #facade;
 }
 
-li:first-child:before{
-  content:"";
-}
-
-/*Container*/
-
+/*=========================================*/
+/*Container*/ /*vital Styles, do not delete on refactor without first checking all */
+/*=========================================*/
 #main-container {
-  height: 100%;
+  min-height: 100%;
+  padding-top: 5.5em;
+  /* for sticky footer, padding-bottom must remain the same as the footer's height */
+  padding-bottom: 8em;
   background-color: #facade;
   margin: 0 auto;
 }
 
-#main-container-col-left {
-  background-color: green;
-  /*overflow:auto;*/
+/*=========================================*/
+/* Header/Footer                           */
+/*=========================================*/
+#header, #footer {
+  background-color: rgb(50, 50, 50);
+  color: white;
 }
+
+#header {
+  position:fixed;
+  width: 100%;
+  z-index: 100;
+  height:5.5em;
+}
+
+#footer {
+  position: relative;
+  text-align: center;
+  bottom: 0px;
+  height: 8em;
+  clear: both;
+  width: 100%;
+}
+
+
+.ul-wrapper { margin-top: em; }
+
+/*=========================================*/
+/* Content/Container Divs                  */
+/*=========================================*/
+.row.home {
+  height: 600px;
+}
+
+#home-container-left {
+  top: 20%;
+}
+
+.work {
+  margin-top: 15px;
+}
+
+/* So left columns align w/ title & nav ul */
+.col-md-5.col-md-offset-1,
+.col-md-4.col-md-offset-1 {
+  background-color: green;
+  padding-left: 4em;
+}
+
+/* So right columns align on collapse */
+.col-md-3.right-column {
+  padding-left: 4em;
+}
+
 
 #main-container-col-right {
-  overflow:hidden;
+  overflow: hidden;
 }
 
+/*========================================*/
+/* Title                                  */
+/*========================================*/
 #title {
-}
-
-#hello {
-  top:25%;
+  border-bottom: 1px dotted black;
 }
 
 #title-div {
   height: 4em;
-  /*display: none;*/
-  opacity: 0;
 }
 
 #nested-title-div {
   padding-left: 4em;
 }
 
-#lower-container {
-  height:50em;
-  background-color: #facade;
+
+/*========================================*/
+/* Fade-In and Fade-Out Animations        */
+/*========================================*/
+.display-true {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+  -ms-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -webkit-transition: opacity 0.4s ease-out;
 }
 
-.project-photo, .project-text {
-  /*display:none;*/
+.display-false {
   opacity: 0;
+  transition: opacity 0.4s ease-out;
+  -ms-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -webkit-transition: opacity 0.4s ease-out;
+}
+
+/*========================================*/
+/* Development Helpers                    */
+/*========================================*/
+.red {
+  background-color: red;
 }
