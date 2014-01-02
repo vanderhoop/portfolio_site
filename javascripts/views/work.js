@@ -3,11 +3,6 @@ var WorkView = Backbone.View.extend({
 
   initialize: function(){
     console.log("WorkView is initialized");
-    $("#home-nav").on("click", function(){
-      app.router.navigate("home", { trigger:true });
-    });
-    // preparePage();
-    $("#main-container").switchClass("display-true", "display-false");
     this.render();
   },
 
@@ -38,7 +33,7 @@ var WorkView = Backbone.View.extend({
     ];
     var workHTML = template({ projects: projects });
     this.$el.append(workHTML);
-    $("#main-container").switchClass("display-false", "display-true");
+    $("#main-container").fadeIn(600);
   } // render
 
 }); // WorkView

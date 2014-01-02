@@ -1,8 +1,8 @@
-function preparePage(){
-  $("#main-container").children().fadeOut(function(){
-    $("#main-container").empty();
-  });
-}
+// function preparePage(){
+//   $("#main-container").children().fadeOut(function(){
+//     $("#main-container").empty();
+//   });
+// }
 
 function prepareTitleTemplate(titleText){
   var source = $("#title-template").html(),

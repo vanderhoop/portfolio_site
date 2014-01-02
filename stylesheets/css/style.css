@@ -137,18 +137,18 @@ iframe {
 /*========================================*/
 .display-true {
   opacity: 1;
-  transition: opacity 0.4s ease-out;
-  -ms-transition: opacity 0.4s ease-out;
-  -moz-transition: opacity 0.4s ease-out;
-  -webkit-transition: opacity 0.4s ease-out;
+  transition: opacity 1.0s ease-out;
+  -ms-transition: opacity 1.0s ease-out;
+  -moz-transition: opacity 1.0s ease-out;
+  -webkit-transition: opacity 1.0s ease-out;
 }
 
 .display-false {
   opacity: 0;
-  transition: opacity 0.4s ease-out;
-  -ms-transition: opacity 0.4s ease-out;
-  -moz-transition: opacity 0.4s ease-out;
-  -webkit-transition: opacity 0.4s ease-out;
+  transition: opacity 1.0s ease-out;
+  -ms-transition: opacity 1.0s ease-out;
+  -moz-transition: opacity 1.0s ease-out;
+  -webkit-transition: opacity 1.0s ease-out;
 }
 
 /*========================================*/
