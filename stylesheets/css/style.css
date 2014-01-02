@@ -74,6 +74,8 @@ iframe {
   height: 5.5em;
 }
 
+.ul-wrapper { margin-top: 1.55em; }
+
 #footer {
   position: relative;
   text-align: center;
@@ -82,8 +84,6 @@ iframe {
   clear: both;
   width: 100%;
 }
-
-.ul-wrapper { margin-top: 1.55em; }
 
 /*=========================================*/
 /* Content/Container Divs                  */

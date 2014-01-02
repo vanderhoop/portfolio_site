@@ -9,7 +9,7 @@ var ContactView = Backbone.View.extend({
     $("#home-nav").on("click", function(){
       app.router.navigate("home", { trigger:true });
     })
-    preparePage();
+    // preparePage();
     this.render();
   },
 

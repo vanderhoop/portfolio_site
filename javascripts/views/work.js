@@ -3,14 +3,15 @@ var WorkView = Backbone.View.extend({
 
   initialize: function(){
     console.log("WorkView is initialized");
-    preparePage();
+    // preparePage();
+    debugger
     this.render();
   },
 
   render: function(){
     console.log("Workview render function is firing");
-    var html = prepareTitleTemplate("Work");
-    this.$el.html(html);
+    var titleDiv = prepareTitleTemplate("Work");
+    this.$el.html(titleDiv);
     var template = retrieveWorkTemplate();
     var projects = [
       {

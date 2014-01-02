@@ -1,6 +1,6 @@
 function preparePage(){
   $("#main-container").children().fadeOut(function(){
-    $(this).empty();
+    $("#main-container").empty();
   });
 }
 
