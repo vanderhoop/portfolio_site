@@ -13,22 +13,28 @@ var WorkView = Backbone.View.extend({
     var template = retrieveWorkTemplate();
     var projects = [
       {
-        media: '<iframe src="http://player.vimeo.com/video/35587878" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+        media: '<a href="http://www.insightjournal.us"><img class="work-img" src="images/insight-journal.jpg" alt="InsightJournal"></a>',
+        title: "InsightJournal",
+        role: "Web Developer",
+        description: "The Journaling tool that grows to know you."
+      },
+      {
+        media: '<iframe src="http://player.vimeo.com/video/35587878?title=0&byline=0&portrait=0" width="360" height="203" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+        title: "Ben & Jerry's - Fair Tweets",
+        role: "Web Developer",
+        description: "A tool for Web Developers to break down their projects into User Stories. "
+      },
+      {
+        media: '<iframe src="http://player.vimeo.com/video/35587878?title=0&byline=0&portrait=0" width="360" height="203" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
         title: "Ben & Jerry's - Fair Tweets",
         role: "Copywriter and VO Talent",
         description: "A fun little web app that donated unused twitter characters to spread the word about World Fair Trade Day."
       },
       {
-        media: '<iframe src="http://player.vimeo.com/video/35587878" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
-        title: "Ben & Jerry's - Fair Tweets",
-        role: "Copywriter and VO Talent",
-        description: "A fun little web app that donated unused twitter characters to spread the word about World Fair Trade Day."
-      },
-      {
-        media: '<iframe src="http://player.vimeo.com/video/61557103" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+        media: '<iframe src="http://player.vimeo.com/video/61557103?title=0&amp;byline=0&amp;portrait=0" width="360" height="203" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
         title: "Comedy Central - Skyfall Promos",
         role: "Video Editor",
-        description: "Ballsy promos for Skyfall's release on DVD and Blu-Ray"
+        description: "Promos for Skyfall's release on DVD and Blu-Ray"
       }
     ];
     var workHTML = template({ projects: projects });
