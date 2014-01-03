@@ -91,6 +91,10 @@ iframe {
   position: relative;
   top:0.25em;
 }
+#footer ul {
+  position: relative;
+  top: 26px;
+}
 
 /*=========================================*/
 /* Content/Container Divs                  */

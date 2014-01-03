@@ -20,8 +20,6 @@ var ContactView = Backbone.View.extend({
     var contactHTML = retrieveContactTemplate();
     this.$el.append(contactHTML);
     $("#main-container").fadeIn(600);
-    // $("#main-container").removeClass("display-false").delay(5000).addClass("display-true");
-
   } // render
 
 }); // ContactView
