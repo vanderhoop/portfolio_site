@@ -44,7 +44,7 @@ iframe {
   min-height: 100%; /* for sticky footer */
   height: 100%;  /* for sticky footer in Internet Explorer */
   position: relative;
-  background-color: #facade;
+  /*background-color: #facade;*/
 }
 
 /*=========================================*/
@@ -55,7 +55,7 @@ iframe {
   padding-top: 5.5em;
   /* for sticky footer, padding-bottom must remain the same as the footer's height */
   padding-bottom: 8em;
-  background-color: #facade;
+  /*background-color: #facade;*/
   margin: 0 auto;
 }
 
