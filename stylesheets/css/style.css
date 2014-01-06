@@ -139,14 +139,15 @@ li:hover { opacity: 1; }
 
 #granulr-sprite {
   background-image: url("../../images/granulr-img-sprite.jpg");
-  background-repeat: no-repeat;
 }
 
 #insight-journal-sprite {
   background-image: url("../../images/insight-journal-img-sprite.png");
 }
 
-
+#granulr-sprite, #insight-journal-sprite {
+  transition: background-position 0.7s ease;
+}
 
 #granulr-sprite:hover, #insight-journal-sprite:hover {
   background-position: 0 -223px;
