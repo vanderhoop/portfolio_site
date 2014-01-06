@@ -33,12 +33,6 @@ li+li {
 
 li:hover { opacity: 1; }
 
-/* for embedded vimeo clips */
-iframe {
-  width: 392px;
-  height: 222px;
-  frameborder: 0;
-}
 
 #page {
   min-height: 100%; /* for sticky footer */
@@ -135,21 +129,39 @@ iframe {
 
 .work-media {
   border: 1px solid black;
+  width: 392px;
+  height: 222px;
 }
 
-.work-media img:hover > .overlay {
-  width:100%;
-  height:100%;
-  position:absolute;
-  background-color:#000;
-  opacity:0.5;
-  border-radius:30px;
+.work-media div:hover {
+  height: 222px;
+}
+
+#granulr-sprite {
+  background-image: url("../../images/granulr-img-sprite.jpg");
+  background-repeat: no-repeat;
+}
+
+#insight-journal-sprite {
+  background-image: url("../../images/insight-journal-img-sprite.png");
+}
+
+
+
+#granulr-sprite:hover, #insight-journal-sprite:hover {
+  background-position: 0 -223px;
 }
 
 .work-title {
   text-decoration: underline;
 }
 
+/* for embedded vimeo clips */
+iframe {
+  width: 392px;
+  height: 222px;
+  frameborder: 0;
+}
 /* So left columns align w/ title & nav ul */
 .col-md-5.col-md-offset-1,
 .col-md-4.col-md-offset-1,

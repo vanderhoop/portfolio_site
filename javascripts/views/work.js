@@ -13,13 +13,13 @@ var WorkView = Backbone.View.extend({
     var template = retrieveWorkTemplate();
     var projects = [
       {
-        media: '<a href="http://insight-journal.herokuapp.com/"><img class="work-media" src="images/insight-journal-work.jpg" alt="InsightJournal"></a>',
+        media: '<a href="http://insight-journal.herokuapp.com/"><div class="work-media" id="insight-journal-sprite"></div></a>',
         title: "InsightJournal",
         role: "Web Developer",
         description: "The private online journaling tool that grows to know you through sentiment analysis and usage patterns."
       },
       {
-        media: '<a href="http://insight-journal.herokuapp.com/"><img class="work-media" src="images/granulr-work.jpg" alt="GRANULR"></a>',
+        media: '<a href="http://insight-journal.herokuapp.com/"><div class="work-media" id="granulr-sprite"></div></a>',
         title: "Granulr",
         role: "Web Developer",
         description: "A web app for breaking large goals down into infinitely smaller subgoals."
