@@ -16,10 +16,10 @@ var WorkView = Backbone.View.extend({
         media: '<a href="http://insight-journal.herokuapp.com/"><img class="work-media" src="images/insight-journal-work.jpg" alt="InsightJournal"></a>',
         title: "InsightJournal",
         role: "Web Developer",
-        description: "The online journaling tool that grows to know you through writing patterns and sentiment analysis."
+        description: "The private online journaling tool that grows to know you through sentiment analysis and usage patterns."
       },
       {
-        media: '<iframe class="work-media" src="http://player.vimeo.com/video/35587878?title=0&byline=0&portrait=0" width="360" height="203" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+        media: '<a href="http://insight-journal.herokuapp.com/"><img class="work-media" src="images/granulr-work.jpg" alt="GRANULR"></a>',
         title: "Granulr",
         role: "Web Developer",
         description: "A web app for breaking large goals down into infinitely smaller subgoals."
@@ -32,7 +32,7 @@ var WorkView = Backbone.View.extend({
       },
       {
         media: '<iframe class="work-media" src="http://player.vimeo.com/video/61557103?title=0&amp;byline=0&amp;portrait=0" width="360" height="203" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
-        title: "Comedy Central - Skyfall Promos",
+        title: "Skyfall Promos",
         role: "Video Editor",
         description: "Promos for Skyfall's release on DVD and Blu-Ray"
       }

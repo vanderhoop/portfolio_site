@@ -62,7 +62,7 @@
         <div class="col-md-4 col-md-offset-1">
         </div>
         <div class="col-md-6 col-md-offset-1" id="home-hello">
-          <h2 id="hello" class="home">My name is Travis.</br>I build cool stuff for the web.</br></br>Let's be friends.</h2>
+          <h1 id="hello" class="home">My name is Travis.</br>I build cool stuff for the web.</br></br>Let's be friends.</h1>
         </div>
         <div class="row">
           <div class="col-md-5 col-md-offset-1" id="picture-container">
@@ -83,13 +83,13 @@
     <script id="work-template" type="text/x-handlebars-template">
       {{#each projects}}
       <div class="row work">
-        <div class="col-md-4 col-md-offset-1 red">
+        <div class="col-md-4 col-md-offset-1">
           {{{media}}}
         </div>
         <div class="col-md-3 right-column">
-          <h3>{{title}}</h3>
-          <h6>Role: {{role}}</h6>
-          <p>{{description}}</p>
+          <h2 class="work-title">{{title}}</h2>
+          <h5>Role: {{role}}</h5>
+          <p class="content">{{description}}</p>
         </div>
       </div>
       {{/each}}

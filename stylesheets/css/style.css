@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 a:link, a:visited, a:hover, a:active  { text-decoration: none; }
@@ -35,7 +35,7 @@ li:hover { opacity: 1; }
 
 /* for embedded vimeo clips */
 iframe {
-  width: 393px;
+  width: 392px;
   height: 222px;
   frameborder: 0;
 }
@@ -130,10 +130,24 @@ iframe {
 
 .work {
   margin-top: 15px;
+  margin-bottom: 3em;
 }
 
 .work-media {
   border: 1px solid black;
+}
+
+.work-media img:hover > .overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  background-color:#000;
+  opacity:0.5;
+  border-radius:30px;
+}
+
+.work-title {
+  text-decoration: underline;
 }
 
 /* So left columns align w/ title & nav ul */
