@@ -6,8 +6,7 @@ var ContactView = Backbone.View.extend({
 
   initialize: function(){
     console.log("ContactView is instantiated");
-    // $("#main-container").addClass("display-false");
-    // setTimeout(5000);
+    $('html,body').scrollTop(0);
     this.render();
   },
 

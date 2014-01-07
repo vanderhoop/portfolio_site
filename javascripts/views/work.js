@@ -3,6 +3,7 @@ var WorkView = Backbone.View.extend({
 
   initialize: function(){
     console.log("WorkView is initialized");
+    $('html,body').scrollTop(0);
     this.render();
   },
 

@@ -3,6 +3,7 @@ var HomeView = Backbone.View.extend({
 
   initialize: function(){
     console.log("HomeView is initialized.");
+    $('html,body').scrollTop(0);
     this.render();
   },
 
