@@ -14,7 +14,7 @@ var WorkView = Backbone.View.extend({
     var template = retrieveWorkTemplate();
     var projects = [
       {
-        media: '<a href="http://insight-journal.herokuapp.com/"><div class="work-media" id="insight-journal-sprite"></div></a>',
+        media: '<a href="http://insightjournal.us"><div class="work-media" id="insight-journal-sprite"></div></a>',
         title: "InsightJournal",
         role: "Web Developer",
         description: "The private online journaling tool that grows to know you through sentiment analysis and usage patterns."
