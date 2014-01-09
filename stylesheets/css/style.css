@@ -32,13 +32,17 @@ p {
   font-size: 1.1em;
 }
 
-a:link, a:visited, a:hover, a:active  { text-decoration: none; }
+a:link, a:visited, a:hover, a:active, a  { text-decoration: none; }
 
 ul li {
   list-style: none;
   display: inline-block;
-  opacity: 0.85;
   font-size: 1.35em;
+  opacity: 0.85;
+  /* Couldn't get these transitions to work */
+/*  transition: opacity .20s ease-in;
+  -moz-transition: opacity .20s ease-in;
+  -webkit-transition: opacity .20s ease-in;*/
 }
 
 li+li {
