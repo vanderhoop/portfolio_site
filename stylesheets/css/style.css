@@ -87,6 +87,15 @@ li:hover { opacity: 1; }
   color: white;
 }
 
+#footer h4 {
+  color: rgb(205, 205, 205);
+}
+
+div#copyright {
+  padding-top: 22px;
+  padding-left: 39px;
+}
+
 #header {
   position:fixed;
   width: 100%;
