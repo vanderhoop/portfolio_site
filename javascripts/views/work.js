@@ -20,7 +20,7 @@ var WorkView = Backbone.View.extend({
         description: "The private online journaling tool that grows to know you through sentiment analysis and usage patterns."
       },
       {
-        media: '<a href="http://granulr.herokuapp.com/"><div class="work-media" id="granulr-sprite"></div></a>',
+        media: '<a href="http://granulr.net/"><div class="work-media" id="granulr-sprite"></div></a>',
         title: "Granulr",
         role: "Web Developer",
         description: "A web app for breaking large goals down into infinitely smaller subgoals."
