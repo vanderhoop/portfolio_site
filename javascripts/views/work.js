@@ -20,6 +20,12 @@ var WorkView = Backbone.View.extend({
         description: "The private online journaling tool that grows to know you through sentiment analysis and usage patterns."
       },
       {
+        media: '<a href="http://metapinger.herokuapp.com/"><div class="work-media" id="metapinger-sprite"></div></a>',
+        title: "MetaPinger",
+        role: "Web Developer",
+        description: "Heroku's servers are famous for idling, so I built a Heroku app that pings other Heroku apps into perpetual wakefulness. All it took was a single dyno."
+      },
+      {
         media: '<a href="http://granulr.net/"><div class="work-media" id="granulr-sprite"></div></a>',
         title: "Granulr",
         role: "Web Developer",
