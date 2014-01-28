@@ -151,6 +151,10 @@ div#copyright {
   top: 1.5em;
 }
 
+/* This div preloads the cropped-headshot image but */
+/* doesn't display it, allowing for better performance */
+div#preload { display: none; }
+
 #travis-img {
   padding-top: 56px;
   position: relative;
