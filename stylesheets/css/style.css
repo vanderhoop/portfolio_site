@@ -190,11 +190,15 @@ div#copyright {
   background-image: url("../../images/metapinger-img-sprite.png");
 }
 
-#granulr-sprite, #insight-journal-sprite, #metapinger-sprite {
+#fairtweets-sprite {
+  background-image: url("../../images/fairtweets-img-sprite.png");
+}
+
+#granulr-sprite, #insight-journal-sprite, #metapinger-sprite, #fairtweets-sprite {
   transition: background-position 0.7s ease;
 }
 
-#granulr-sprite:hover, #insight-journal-sprite:hover, #metapinger-sprite:hover {
+#granulr-sprite:hover, #insight-journal-sprite:hover, #metapinger-sprite:hover, #fairtweets-sprite:hover {
   background-position: 0 -223px;
 }
 

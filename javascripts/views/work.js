@@ -23,7 +23,7 @@ var WorkView = Backbone.View.extend({
         media: '<a href="http://metapinger.herokuapp.com/"><div class="work-media" id="metapinger-sprite"></div></a>',
         title: "MetaPinger",
         role: "Web Developer",
-        description: "Heroku's servers are famous for idling, so I built a Heroku app that pings other Heroku apps into perpetual wakefulness. All it took was a single dyno."
+        description: "Heroku's servers are famous for idling, so I built a Heroku app that pings Heroku apps (including itself) at 10 minute intervals, ensuring perpetual wakefulness. All it took was a single dyno."
       },
       {
         media: '<a href="http://granulr.net/"><div class="work-media" id="granulr-sprite"></div></a>',
@@ -32,16 +32,10 @@ var WorkView = Backbone.View.extend({
         description: "A web app for breaking large goals down into infinitely smaller subgoals."
       },
       {
-        media: '<iframe class="work-media" src="http://player.vimeo.com/video/35587878?title=0&byline=0&portrait=0" width="360" height="203" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+        media: '<a href="https://vimeo.com/23211569"><div class="work-media" id="fairtweets-sprite"></div></a>',
         title: "Ben & Jerry's - Fair Tweets",
         role: "Copywriter and VO Talent",
         description: "A fun little web app that donated unused twitter characters to spread the word about World Fair Trade Day."
-      },
-      {
-        media: '<iframe class="work-media" src="http://player.vimeo.com/video/61557103?title=0&amp;byline=0&amp;portrait=0" width="360" height="203" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
-        title: "Skyfall Promos",
-        role: "Video Editor",
-        description: "Promos for Skyfall's release on DVD and Blu-Ray"
       }
     ];
     var workHTML = template({ projects: projects });
