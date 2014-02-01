@@ -200,6 +200,9 @@ div#preload { display: none; }
 
 #granulr-sprite, #insight-journal-sprite, #metapinger-sprite, #fairtweets-sprite {
   transition: background-position 0.7s ease;
+  -webkit-transition: background-position 0.7s ease-in-out;
+  -moz-transition: background-position 0.7s ease-in-out;
+  -o-transition: background-position 0.7s ease-in-out;
 }
 
 #granulr-sprite:hover, #insight-journal-sprite:hover, #metapinger-sprite:hover, #fairtweets-sprite:hover {
