@@ -3,14 +3,10 @@ var WorkView = Backbone.View.extend({
 
   initialize: function(){
     console.log("WorkView is initialized");
-    $('html,body').scrollTop(0);
-    this.render();
   },
 
   render: function(){
     console.log("Workview render function is firing");
-    var titleDiv = prepareTitleTemplate("Work");
-    this.$el.html(titleDiv);
     var template = retrieveWorkTemplate();
     var projects = [
       {
@@ -32,10 +28,10 @@ var WorkView = Backbone.View.extend({
         description: "A fun little web app that donated unused twitter characters to spread the word about World Fair Trade Day."
       }
     ];
-    var workHTML = template({ projects: projects });
-    this.$el.append(workHTML);
-    $("#main-container").fadeIn(600);
-  } // render
+    var titleDiv = prepareTitleTemplate("Work"),
+        workHTML = template({ projects: projects });
+    return this.$el.html(titleDiv + workHTML);
+  }, // render
 
 }); // WorkView
 

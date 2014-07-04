@@ -7,28 +7,34 @@ var Router = Backbone.Router.extend({
   },
 
   initialize: function(){
-    // cacheing
+    // cache container
     this.mainContainer = $("#main-container");
+    this.contactView = new ContactView();
+    this.homeView = new HomeView();
+    this.workView = new WorkView();
   },
 
   home: function(){
+    var routerInstance = this; // for use within fadeOut callback
     this.mainContainer.fadeOut(400, function(){
       console.log("home route is firing");
-      app.homeView = new HomeView();
+      routerInstance.homeView.render().fadeIn(600);
     });
   },
 
   work: function(){
+    var routerInstance = this;
     this.mainContainer.fadeOut(400, function(){
       console.log("work route is firing");
-      app.workView = new WorkView();
+      routerInstance.workView.render().fadeIn(600);
     });
   },
 
   contact: function(){
+    var routerInstance = this;
     this.mainContainer.fadeOut(400, function(){
       console.log("contact route is firing");
-      app.contactView = new ContactView();
+      routerInstance.contactView.render().fadeIn(600);
     });
   }
 }); //Router
