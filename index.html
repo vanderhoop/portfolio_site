@@ -49,14 +49,15 @@
       <!-- footer end -->
     </div>
 
-    <script id="title-template" type="text/x-handlebars-template">
+    <script id="title-template" type="text/template">
       <div class="row" id="title-div">
         <div class="col-md-offset-1" id="nested-title-div">
           <h1><span id="title">{{title}}</span></h1>
         </div>
       </div>
     </script>
-    <script id="home-template" type="text/x-handlebars-template">
+
+    <script id="home-template" type="text/template">
       <div class="row home" >
         <div class="col-md-4 col-md-offset-1">
         </div>
@@ -71,7 +72,7 @@
       </div>
     </script>
 
-    <script id="contact-template" type="text/x-handlebars-template">
+    <script id="contact-template" type="text/template">
       <div class="row">
         <div class="col-md-5 col-md-offset-1">
           <p class="contact">Interested in chatting? Feel free to connect with me over any of the social networks listed in the <span="#footer-trigger">footer</span> or go ahead and send me a quick email at travis@yourfriendtravis.com.</p><p>If you'd like to take a look at my resume, <a target="_blank" href="travis_vander_hoop_resume.pdf">please do</a>.</p>
@@ -82,7 +83,7 @@
       </div>
     </script>
 
-    <script id="work-template" type="text/x-handlebars-template">
+    <script id="work-template" type="text/template">
       {{#each projects}}
       <div class="row work">
         <div class="col-md-3 col-md-offset-1">
