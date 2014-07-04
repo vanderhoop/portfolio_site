@@ -2,7 +2,8 @@ var Router = Backbone.Router.extend({
   routes: {
     'home'        : 'home',
     'work'        : 'work',
-    'contact'     : 'contact'
+    'contact'     : 'contact',
+    '*default'    : 'home',
   },
 
   initialize: function(){

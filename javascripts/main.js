@@ -15,5 +15,5 @@ $( document ).ready(function() {
     app.router.navigate("work", {trigger:true});
   });
 
-  app.router.navigate("home", {trigger: true})
+  app.router.navigate("home", {trigger: true});
 });
