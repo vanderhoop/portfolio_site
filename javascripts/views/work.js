@@ -26,12 +26,6 @@ var WorkView = Backbone.View.extend({
         description: "Heroku's servers are famous for idling, so I built a Heroku app that pings Heroku apps (including itself) at 10 minute intervals, ensuring perpetual wakefulness. All it took was a single dyno."
       },
       {
-        media: '<a href="http://granulr.net/"><div class="work-media" id="granulr-sprite"></div></a>',
-        title: "Granulr",
-        role: "Web Developer",
-        description: "A web app for breaking large goals down into infinitely smaller subgoals."
-      },
-      {
         media: '<a href="https://vimeo.com/23211569"><div class="work-media" id="fairtweets-sprite"></div></a>',
         title: "Ben & Jerry's - Fair Tweets",
         role: "Copywriter and VO Talent",
