@@ -3,13 +3,13 @@ var HomeView = Backbone.View.extend({
 
   initialize: function(){
     console.log("HomeView is initialized.");
+    this.html = $("#home-template").html();
   },
 
   render: function(){
     console.log("HomeView's render function is firing");
-    var html = retrieveHomeTemplate();
-    return this.$el.html(html);
+    return this.$el.html(this.html);
   },
 
 
-}); // HomeView
+});

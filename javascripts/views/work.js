@@ -1,14 +1,15 @@
+function prepareTitleTemplate(titleText){
+  var template = _.template( $("#title-template").html() );
+  return template({ title: titleText });
+}
+
 var WorkView = Backbone.View.extend({
   el: "#main-container",
+  template: _.template( $("#work-template").html() ),
 
   initialize: function(){
     console.log("WorkView is initialized");
-  },
-
-  render: function(){
-    console.log("Workview render function is firing");
-    var template = retrieveWorkTemplate();
-    var projects = [
+    this.projects = [
       {
         media: '<a href="http://insightjournal.us"><div class="work-media" id="insight-journal-sprite"></div></a>',
         title: "InsightJournal",
@@ -28,12 +29,17 @@ var WorkView = Backbone.View.extend({
         description: "A fun little web app that donated unused twitter characters to spread the word about World Fair Trade Day."
       }
     ];
-    var titleDiv = prepareTitleTemplate("Work"),
-        workHTML = template({ projects: projects });
-    return this.$el.html(titleDiv + workHTML);
-  }, // render
 
-}); // WorkView
+    this.titleHTML = prepareTitleTemplate("Work");
+    this.workHTML = this.template({ projects: this.projects });
+  },
+
+  render: function(){
+    console.log("Workview render function is firing");
+    return this.$el.html(this.titleHTML + this.workHTML);
+  },
+
+});
 
 
 
