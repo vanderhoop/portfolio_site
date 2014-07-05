@@ -11,5 +11,4 @@ var HomeView = Backbone.View.extend({
     return this.$el.html(this.html);
   },
 
-
 });
