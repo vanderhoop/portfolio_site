@@ -1,3 +1,5 @@
+var body = $("html, body");
+
 var Router = Backbone.Router.extend({
   routes: {
     'home'        : 'home',
@@ -18,6 +20,7 @@ var Router = Backbone.Router.extend({
     // for use within fadeOut callback
     var routerInstance = this;
     this.mainContainer.fadeOut(400, function(){
+      body.scrollTop(0);
       routerInstance.homeView.render().fadeIn(600);
     });
   },
@@ -25,6 +28,7 @@ var Router = Backbone.Router.extend({
   work: function(){
     var routerInstance = this;
     this.mainContainer.fadeOut(400, function(){
+      body.scrollTop(0);
       routerInstance.workView.render().fadeIn(600);
     });
   },
@@ -32,6 +36,7 @@ var Router = Backbone.Router.extend({
   contact: function(){
     var routerInstance = this;
     this.mainContainer.fadeOut(400, function(){
+      body.scrollTop(0);
       routerInstance.contactView.render().fadeIn(600);
     });
   }
