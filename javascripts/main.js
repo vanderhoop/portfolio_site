@@ -1,7 +1,6 @@
 $( document ).ready(function() {
   var app = {};
   // instantiate router, start tracking history, and go to home route
-  app.contactView = new ContactView();
   app.router = new Router();
   Backbone.history.start();
 
