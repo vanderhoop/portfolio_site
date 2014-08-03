@@ -71,12 +71,14 @@ li:hover { opacity: 1; }
 /*Container*/ /*vital styles for sticky footer, do not delete on refactor without first checking all */
 /*=========================================*/
 #main-container {
+  margin: 0 auto;
   min-height: 100%;
   padding-top: 5.5em;
   /* for sticky footer, padding-bottom must remain the same as the footer's height */
   /*padding-bottom: 8em;*/
   /*background-color: #facade;*/
-  margin: 0 auto;
+  transition: opacity 0.5s;
+
 }
 
 /*=========================================*/
