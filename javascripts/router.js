@@ -31,10 +31,6 @@ var Router = Backbone.Router.extend({
 
   work: function(){
     var routerInstance = this;
-    // this.mainContainer.fadeOut(400, function(){
-    //   body.scrollTop(0);
-    //   routerInstance.workView.render().fadeIn(600);
-    // });
 
     this.mainContainer.css("opacity", 0);
     var timeoutID2 = setTimeout(function(){
@@ -47,10 +43,6 @@ var Router = Backbone.Router.extend({
 
   contact: function(){
     var routerInstance = this;
-    // this.mainContainer.fadeOut(400, function(){
-    //   body.scrollTop(0);
-    //   routerInstance.contactView.render().fadeIn(600);
-    // });
     this.mainContainer.css("opacity", 0);
     var timeoutID3 = setTimeout(function(){
       body.scrollTop(0);
