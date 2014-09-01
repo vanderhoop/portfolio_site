@@ -19,10 +19,6 @@ var Router = Backbone.Router.extend({
   home: function(){
     // for use within fadeOut callback
     var routerInstance = this;
-    // this.mainContainer.fadeOut(400, function(){
-    //   body.scrollTop(0);
-    //   routerInstance.homeView.render().fadeIn(600);
-    // });
     this.mainContainer.css("opacity", 0);
     // sets a timeout to wait for the css transition to complete before removing content
     var timeoutID1 = setTimeout(function(){
