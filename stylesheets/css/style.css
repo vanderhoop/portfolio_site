@@ -144,8 +144,8 @@ div#copyright {
 }
 
 #picture-container {
-  position: relative;
   bottom: 0px;
+  position: relative;
 }
 
 #hello {
@@ -158,9 +158,9 @@ div#copyright {
 div#preload { display: none; }
 
 #travis-img {
+  left: 86px;
   padding-top: 56px;
   position: relative;
-  left: 86px;
 }
 
 .work {
@@ -170,8 +170,8 @@ div#preload { display: none; }
 
 .work-media {
   border: 1px solid black;
-  width: 392px;
   height: 222px;
+  width: 392px;
 }
 
 .work .role {
