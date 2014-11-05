@@ -171,30 +171,31 @@ div#preload { display: none; }
   margin-top: 0.4em;
 }
 
-.work-media div:hover {
-  height: 222px;
-}
-
 .overlay {
-  background-color: black;
+  background-color: rgba(0,0,0, 0.4);
   height: 100%;
   display: table;
   opacity: 0.0;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   width: 391px;
 }
 
 .overlay:hover {
-  opacity: 0.3
+  opacity: 1.0
 }
 
 .overlay p {
-  color: red;
+  color: white;
   display: table-cell;
-  vertical-align: middle;
   font-size: 4em;
   font-weight: bold;
+  opacity: 1.0;
   text-align: center;
+  vertical-align: middle;
+}
+
+a .overlay p {
+  text-decoration: none;
 }
 
 #granulr-sprite {
@@ -209,6 +210,10 @@ div#preload { display: none; }
   background-image: url("../../images/metapinger-img-sprite.png");
 }
 
+#battleroom-sprite {
+  background-image: url("../../images/battleroom-sprite.png");
+}
+
 #fairtweets-sprite {
   background-image: url("../../images/fairtweets-img-sprite.png");
 }
@@ -218,10 +223,6 @@ div#preload { display: none; }
   -webkit-transition: background-position 0.7s ease-in-out;
   -moz-transition: background-position 0.7s ease-in-out;
   -o-transition: background-position 0.7s ease-in-out;
-}
-
-#granulr-sprite:hover, #insight-journal-sprite:hover, #metapinger-sprite:hover, #fairtweets-sprite:hover {
-  background-position: 0 -223px;
 }
 
 .work-title {
