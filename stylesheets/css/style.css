@@ -175,6 +175,28 @@ div#preload { display: none; }
   height: 222px;
 }
 
+.overlay {
+  background-color: black;
+  height: 100%;
+  display: table;
+  opacity: 0.0;
+  transition: opacity 0.4s ease-in-out;
+  width: 391px;
+}
+
+.overlay:hover {
+  opacity: 0.3
+}
+
+.overlay p {
+  color: red;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+}
+
 #granulr-sprite {
   background-image: url("../../images/granulr-img-sprite.jpg");
 }

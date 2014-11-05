@@ -29,7 +29,7 @@ var WorkView = Backbone.View.extend({
         description: "A fun little web app that donated unused twitter characters to spread the word about World Fair Trade Day."
       },
       {
-        media: '<a href="https://github.com/vanderhoop/battleroom"><div class="work-media" id="battleroom-sprite"></div></a>',
+        media: '<a href="https://github.com/vanderhoop/battleroom"><div class="work-media" id="battleroom-sprite"><div class="overlay"><p>+</p></div></div></a>',
         title: "The Battleroom Gem",
         role: "Benevolent Dictator for Life",
         description: "A command line tool designed to give Ruby newbies countless reps doing simple tasks like working with variables, manipulating data structures, and defining and invoking methods."
