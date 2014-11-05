@@ -39,10 +39,6 @@ ul li {
   display: inline-block;
   font-size: 1.35em;
   opacity: 0.85;
-  /* Couldn't get these transitions to work */
-/*  transition: opacity .20s ease-in;
-  -moz-transition: opacity .20s ease-in;
-  -webkit-transition: opacity .20s ease-in;*/
 }
 
 ul li:nth-child(odd):hover {
@@ -64,7 +60,6 @@ li:hover { opacity: 1; }
   min-height: 100%; /* for sticky footer */
   height: 100%;  /* for sticky footer in Internet Explorer */
   position: relative;
-  /*background-color: #facade;*/
 }
 
 /*=========================================*/
@@ -74,11 +69,7 @@ li:hover { opacity: 1; }
   margin: 0 auto;
   min-height: 100%;
   padding-top: 5.5em;
-  /* for sticky footer, padding-bottom must remain the same as the footer's height */
-  /*padding-bottom: 8em;*/
-  /*background-color: #facade;*/
   transition: opacity 0.5s;
-
 }
 
 /*=========================================*/
