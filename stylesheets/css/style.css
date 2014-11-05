@@ -32,7 +32,8 @@ p {
   font-size: 1.1em;
 }
 
-a:link, a:visited, a:hover, a:active, a  { text-decoration: none; }
+/* !important necessary for Firefox, which renders an underline by default on all linked text */
+a:link, a:visited, a:hover, a:active, a  { text-decoration: none !important; }
 
 ul li {
   list-style: none;
@@ -186,12 +187,11 @@ div#preload { display: none; }
 
 .overlay p {
   color: white;
-  display: table-cell;
+  line-height: 210px;
   font-size: 4em;
   font-weight: bold;
   opacity: 1.0;
   text-align: center;
-  vertical-align: middle;
 }
 
 a .overlay p {
