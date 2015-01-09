@@ -11,13 +11,12 @@ var Router = Backbone.Router.extend({
   initialize: function(){
     // cache container
     this.mainContainer = $("#main-container");
-    this.contactView = new ContactView();
-    this.homeView = new HomeView();
-    this.workView = new WorkView();
+    this.contactView   = new ContactView();
+    this.homeView      = new HomeView();
+    this.workView      = new WorkView();
   },
 
   home: function(){
-    // for use within fadeOut callback
     var routerInstance = this;
     this.mainContainer.css("opacity", 0);
     // sets a timeout to wait for the css transition to complete before removing content
@@ -31,8 +30,8 @@ var Router = Backbone.Router.extend({
 
   work: function(){
     var routerInstance = this;
-
     this.mainContainer.css("opacity", 0);
+
     var timeoutID2 = setTimeout(function(){
       body.scrollTop(0);
       routerInstance.mainContainer.css("display", "none");
@@ -44,6 +43,7 @@ var Router = Backbone.Router.extend({
   contact: function(){
     var routerInstance = this;
     this.mainContainer.css("opacity", 0);
+
     var timeoutID3 = setTimeout(function(){
       body.scrollTop(0);
       routerInstance.mainContainer.css("display", "none");
