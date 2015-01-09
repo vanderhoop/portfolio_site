@@ -11,7 +11,7 @@ var WorkView = Backbone.View.extend({
     console.log("WorkView is initialized");
     this.projects = [
       {
-        media: '<a href="http://insightjournal.us"><div class="work-media" id="insight-journal-sprite"><div class="overlay"><p>+</p></div></div></a>',
+        media: '<a href="http://insightjournal.us"><div class="work-media" id="insight-journal-sprite"><p>InsightJournal</p><div class="overlay"><p>+</p></div></div></a>',
         title: "InsightJournal",
         role: "Web Developer",
         description: "The private online journaling tool that grows to know you through sentiment analysis and usage patterns."

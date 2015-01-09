@@ -14,6 +14,13 @@
   src: local('Abel'), local('Abel-Regular'), url(http://themes.googleusercontent.com/static/fonts/abel/v4/wnJbeWILdr-ZMJJAMsiXsvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'HelveticaNeue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/helvetica_neue.woff') format('woff');
+}
+
 /*==================================*/
 /* Global Styles                    */
 /*==================================*/
@@ -153,7 +160,11 @@ div#copyright {
 
 /* This div preloads the cropped-headshot image but */
 /* doesn't display it, allowing for better performance */
-div#preload { display: none; }
+.preload { display: none; }
+
+.helvetica-neue {
+  font-family: HelveticaNeue, sans-serif;
+}
 
 #travis-img {
   left: 86px;
@@ -217,8 +228,12 @@ a .overlay p {
   text-decoration: none;
 }
 
-#insight-journal-sprite {
-  background-image: url("../../images/insight-journal-img-sprite.png");
+#insight-journal-sprite > p {
+  font-size: 2.6em;
+  margin-top: 2.1em;
+  background-color: #FFF;
+  color: #6D6D6D;
+  font-family: HelveticaNeue, monospace;
 }
 
 #metapinger-sprite {
@@ -230,7 +245,12 @@ a .overlay p {
 #battleroom-sprite {
   background-color: #0C3E4B;
   color: #62CBC1;
-  font-family: monospace;
+  font-family: "Andale Mono", monospace;
+}
+
+#battleroom-sprite > p {
+  letter-spacing: -0.05em;
+  font-weight: lighter;
 }
 
 .work-title {
@@ -238,35 +258,17 @@ a .overlay p {
   margin-bottom: 0.1em;
 }
 
-/* for embedded vimeo clips */
-iframe {
-  width: 392px;
-  height: 222px;
-  frameborder: 0;
-}
-/* So left columns align w/ title & nav ul */
+/* aligns left columns w/ title & nav ul */
 .col-md-3.col-md-offset-1,
 .col-md-4.col-md-offset-1,
 .col-md-5.col-md-offset-1,
 .col-md-6.col-md-offset-1 {
-  /*background-color: green;*/
   padding-left: 4em;
-  /*height:inherit;*/
-}
-
-/* This is a hack */
-/* I've given the vimeo videos a fixed width that hangs off the edge of 3 columns */
-/* Giving the videos 4 columns pushed the titles/descriptions too far right */
-/* This width applies to a spacer div in between media and title/description */
-.grid-fix.col-md-1 {
-  width: 11em;
-  /*background-color: red;*/
 }
 
 /* So right columns align on collapse */
 .col-md-3.right-column {
   padding-left: 4em;
-  /*background-color: green;*/
 }
 
 #main-container-col-right {
