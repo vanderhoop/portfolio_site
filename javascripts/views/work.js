@@ -17,19 +17,13 @@ var WorkView = Backbone.View.extend({
         description: "The private online journaling tool that grows to know you through sentiment analysis and usage patterns."
       },
       {
-        media: '<a href="http://metapinger.herokuapp.com/"><div class="work-media" id="metapinger-sprite"><div class="overlay"><p>+</p></div></div></a>',
+        media: '<a href="http://metapinger.herokuapp.com/"><div class="work-media" id="metapinger-sprite"><p>MetaPinger</p><div class="overlay"><p>+</p></div></div></a>',
         title: "MetaPinger",
         role: "Web Developer",
         description: "Heroku's servers are famous for idling, so I built a Heroku app that pings Heroku apps (including itself) at 10 minute intervals, ensuring perpetual wakefulness."
       },
       {
-        media: '<a href="https://vimeo.com/23211569"><div class="work-media" id="fairtweets-sprite"><div class="overlay"><p>+</p></div></div></a>',
-        title: "Ben & Jerry's - Fair Tweets",
-        role: "Copywriter and VO Talent",
-        description: "A fun little web app that donated unused twitter characters to spread the word about World Fair Trade Day."
-      },
-      {
-        media: '<a href="https://github.com/vanderhoop/battleroom"><div class="work-media" id="battleroom-sprite"><div class="overlay"><p>+</p></div></div></a>',
+        media: '<a href="https://github.com/vanderhoop/battleroom"><div class="work-media" id="battleroom-sprite"><p>Battleroom</p><div class="overlay"><p>+</p></div></div></a>',
         title: "The Battleroom Gem",
         role: "Benevolent Dictator for Life",
         description: "A command line tool designed to give Ruby newbies countless reps doing simple tasks like working with variables, manipulating data structures, and defining and invoking methods."
