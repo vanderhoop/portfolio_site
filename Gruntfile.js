@@ -2,6 +2,7 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.initConfig({
   concat: {
     js: {
@@ -24,6 +25,13 @@ module.exports = function(grunt) {
         'javascripts/bundle.min.js': ['javascripts/bundle.js']
       }
     }
+  },
+  cssmin: {
+  target: {
+    files: {
+      'stylesheets/css/style.min.css': ['stylesheets/css/style.css']
+    }
   }
+}
 });
 };
