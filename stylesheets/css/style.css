@@ -14,13 +14,6 @@
   src: local('Abel'), local('Abel-Regular'), url(http://themes.googleusercontent.com/static/fonts/abel/v4/wnJbeWILdr-ZMJJAMsiXsvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/helvetica_neue.woff') format('woff');
-}
-
 /*==================================*/
 /* Global Styles                    */
 /*==================================*/
@@ -53,18 +46,17 @@ ul li {
   display: inline-block;
   font-size: 1.35em;
   opacity: 0.85;
+  cursor: pointer;
 }
 
-ul li:nth-child(odd):hover {
-  cursor:pointer;
-}
+li:before, li:after { cursor: pointer; }
 
-ul li:nth-child(even):hover {
-  cursor:none;
+li {
+  cursor: pointer;
 }
 
 li+li {
-  margin-left:.3em;
+  padding-left:.3em;
 }
 
 li:hover { opacity: 1; }
@@ -162,10 +154,6 @@ div#copyright {
 /* doesn't display it, allowing for better performance */
 .preload { display: none; }
 
-.helvetica-neue {
-  font-family: HelveticaNeue, sans-serif;
-}
-
 #travis-img {
   left: 86px;
   padding-top: 56px;
@@ -233,7 +221,7 @@ a .overlay p {
   margin-top: 2.1em;
   background-color: #FFF;
   color: #6D6D6D;
-  font-family: HelveticaNeue, monospace;
+  font-family: "Helvetica", sans-serif;
 }
 
 #metapinger-sprite {
